@@ -3,18 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+
     <title>Login</title>
 </head>
-<body>
+<body id="body" >
 
+   <form>
+    <h2>Welcome Back!</h2>
+
+    <p id="errloginemail"></p>
+    <label>Enter E-mail:</label>
+    <input type="text" id="loginemail">
+
+    <p id="errloginpass"></p>
+    <label>Enter Password:</label>
+    <input type="text" id="loginpassword">
+
+    <p>Don't have an account? <a href="signup.html">Sign-up</a></p>
+
+    <input type="submit" value="Login" onclick="return Login()">
+</form>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
     
-    <p id="errloginemail" ></p>
-    Enter E-mail : <input type="text" id="loginemail"> <br><br>
 
-    <p id="errloginpass" ></p>
-    Enter Password : <input type="text" id="loginpassword"> <br><br>
 
-    <input type="submit" name="" value="Login" onclick="return Login()">
+    <script src="vanta.js" ></script>
+    <script src="script.js" ></script>
     
 
 
