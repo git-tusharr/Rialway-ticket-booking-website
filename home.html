@@ -3,18 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
     <title>Home page</title>
 </head>
 <body>
 
-    <nav>
+    
+        <nav class="navbar">
+            <div class="navbarContainer" >
+                <div class="navbarLogo">
+                    <span><i class="fa-solid fa-train"></i> <span></span> QuickRails</span>
+                </div>
 
-    </nav>
+                <div class="navLinks" >
+                
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Sign Up</a>
+                
+                </div>
+            </div>    
+            
+        </nav>
+
+
+
+            <section class="whyChoose">
+                <div class="whyChooseHeading">
+                <h2>Why to chose QuickRails ?</h2>
+                <p>We provide the best train travel experience with unmatched comfort, reliability, and service.</p>
+                </div>
+
+                <div class="whyChooseBox" >
+                <div class="feature">
+                    <div class="featureBox" data-aos="fade-right" >
+                        <Span><i class="fa-sharp fa-solid fa-shield-halved"></i></Span>
+                        <h2>Secure & Safe</h2>
+                        <p>Your safety is our top priority. We use advanced systems to ensure a safe journey every time.</p>
+                    </div>
+                </div>
+
+                <div class="feature" >
+                    <div class="featureBox"  data-aos="fade-up">
+                        <span><i class="fa-sharp fa-solid fa-person"></i></span>
+                        <h2>Comfort</h2>
+                        <p>Enjoy a relaxing ride with our clean and comfortable seating, air-conditioning, and quiet cabins.</p>
+                    </div>
+                </div>
+
+                <div class="feature" >
+                    <div class="featureBox"  data-aos="fade-left">
+                        <span><i class="fa-sharp fa-regular fa-clock"></i></span>
+                        <h2>Always on time</h2>
+                        <p>We value your time. Our trains are known for their punctuality and consistent schedule.</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+
+            
+            <section class="footer" >
+                <div class="footerContainer">
+                    <div class="footerLogo" >
+                        <span><i class="fa-solid fa-train"></i> QuickRails</span><br><br>
+                        <p>Your premium partner for comfortable and <br>reliable 
+                            train travel across the nation.</p>
+                    </div>
+                </div>
+
+                <div class="footerContainer">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Sign-up</a></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="footerContainer">
+                    
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fa-sharp fa-solid fa-phone"></i> +91 7692870163</li>
+                        <li><i class="fa-sharp fa-solid fa-envelope"></i> chourasiyatushar53@gmail.com</li>
+                        <li><i class="fa-sharp fa-solid fa-building"></i> Sahara estate, Bhopal</li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+            
+            <footer>© 2025 QuickRails. All rights reserved. | Privacy Policy | Terms of Service</footer>
+
+
+
+
+       
+    
     
 
 
 
     <script src="script.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000, 
+        once: true       
+    });
+    </script>
 </body>
 </html>
