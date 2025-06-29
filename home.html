@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="swiper.css">
+    <link
+  rel="stylesheet"
+/>
+    
     <link rel="stylesheet" href="home.css">
     <title>Home page</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
 </head>
 <body>
 
@@ -66,6 +73,51 @@
             </section>
 
 
+
+
+   <section class="coustomerSays">
+  <h2>What Our Customers Say</h2>
+  <p>Join thousands of satisfied travelers who trust RailWay for their journeys.</p>
+  
+  <div class="coustomerSaysContainer swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide coustomerSaysBox">
+        <p>"Absolutely fantastic service! The train was comfortable, on time, and the staff was incredibly helpful. Will definitely book again!"</p>
+        <h4>- Siddhard israni</h4>
+      </div>
+
+      <div class="swiper-slide coustomerSaysBox">
+        <p>"Best train travel experience I've ever had. The booking process was smooth, and the journey exceeded my expectations."</p>
+        <h4>- Vineet Kushwah</h4>
+      </div>
+
+      <div class="swiper-slide coustomerSaysBox">
+        <p>"Perfect for business travel. Reliable, comfortable, and affordable. The WiFi was excellent for working during the journey."</p>
+        <h4>- Prashant Patel</h4>
+      </div>
+    </div>
+
+    <!-- Pagination Dots -->
+    <div class="swiper-pagination"></div>
+
+    <!-- Navigation Buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
             
             <section class="footer" >
                 <div class="footerContainer">
@@ -119,5 +171,15 @@
         once: true       
     });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js" ></script>
+
+
+
+
+
+
+
 </body>
 </html>

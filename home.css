@@ -104,6 +104,79 @@
 
 }
 
+
+
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000; 
+}
+
+.swiper-pagination-bullet {
+  background: #333;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+}
+
+
+
+
+.coustomerSays {
+  padding: 50px;
+  background: white;
+  text-align: center;
+}
+
+.coustomerSays h2 {
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  color: #2f5ca0;
+}
+
+.coustomerSays p {
+  font-size: 20px;
+  margin-bottom: 60px;
+  color: #007BFF;
+}
+
+.coustomerSaysBox {
+  background: white;
+  padding: 80px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  color: #007BFF;
+}
+
+.swiper {
+  width: 60%;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer{
     margin-top: 50px;
     display: flex;

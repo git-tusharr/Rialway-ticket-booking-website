@@ -7,6 +7,9 @@ body {
     margin: 0px;
     padding: 0px;
     width: 100%;
+    background-image: url(https://images.railyatri.in/ry_images_prod/rail-min-min-1646638920.png);
+      background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -19,6 +22,7 @@ form {
     width: 300px;
     display: flex;
     flex-direction: column;
+    margin-right: 1000px;
     
 }
 
