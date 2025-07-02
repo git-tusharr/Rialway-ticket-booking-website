@@ -1,0 +1,14 @@
+{
+  "railway": [
+    {
+      "id": "d96a",
+      "Name": "tushar",
+      "From": "Jaipur",
+      "To": "Hyderabad",
+      "Departure": "2025-07-26",
+      "Person": 5,
+      "Class": "AC First Class",
+      "Total": 2500
+    }
+  ]
+}

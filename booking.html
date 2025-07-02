@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="booking.css" />
+  <title>Train Booking</title>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Train Booking Form</h2>
+    <form onsubmit="return Ins()">
+
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="from">From</label><br>
+      <select id="from" name="from" required>
+        <option value="">-- Select City --</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+        <option value="Pune">Pune</option>
+        <option value="Jaipur">Jaipur</option>
+        <option value="Lucknow">Lucknow</option>
+      </select><br><br>
+
+      <label for="to">To</label><br>
+      <select id="to" name="to" required>
+        <option value="">-- Select City --</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+        <option value="Pune">Pune</option>
+        <option value="Jaipur">Jaipur</option>
+        <option value="Lucknow">Lucknow</option>
+      </select><br><br>
+
+      <label for="departure">Departure Date</label><br>
+      <input type="date" id="departure" name="departure_date" required><br><br>
+
+      <label for="person">Number of Passengers</label><br>
+      <input type="number" id="person" name="passengers" min="1" max="10" required><br><br>
+
+      <label for="class">Class</label><br>
+      <select id="class" name="class" required>
+        <option value="">-- Select Class --</option>
+        <option value="Sleeper">Sleeper</option>
+        <option value="AC 3-Tier">AC 3-Tier</option>
+        <option value="AC 2-Tier">AC 2-Tier</option>
+        <option value="AC First Class">AC First Class</option>
+        <option value="Chair Car">Chair Car</option>
+      </select><br><br>
+
+      <input type="submit" value="Book Now" />
+    </form>
+  </div>
+
+  <script src="crud.js"></script>
+</body>
+</html>
