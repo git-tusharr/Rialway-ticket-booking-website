@@ -11,10 +11,10 @@
     <h2>Train Booking Form</h2>
     <form onsubmit="return Ins()">
 
-      <label for="name">Name</label><br>
+      Name<br>
       <input type="text" id="name" name="name" required><br><br>
 
-      <label for="from">From</label><br>
+      From<br>
       <select id="from" name="from" required>
         <option value="">-- Select City --</option>
         <option value="Delhi">Delhi</option>
@@ -29,7 +29,7 @@
         <option value="Lucknow">Lucknow</option>
       </select><br><br>
 
-      <label for="to">To</label><br>
+      To<br>
       <select id="to" name="to" required>
         <option value="">-- Select City --</option>
         <option value="Delhi">Delhi</option>
@@ -44,13 +44,13 @@
         <option value="Lucknow">Lucknow</option>
       </select><br><br>
 
-      <label for="departure">Departure Date</label><br>
+      Departure Date<br>
       <input type="date" id="departure" name="departure_date" required><br><br>
 
-      <label for="person">Number of Passengers</label><br>
+      Number of Passengers<br>
       <input type="number" id="person" name="passengers" min="1" max="10" required><br><br>
 
-      <label for="class">Class</label><br>
+      Class<br>
       <select id="class" name="class" required>
         <option value="">-- Select Class --</option>
         <option value="Sleeper">Sleeper</option>
@@ -60,7 +60,12 @@
         <option value="Chair Car">Chair Car</option>
       </select><br><br>
 
-      <input type="submit" value="Book Now" />
+
+      <a href="crud.html">
+        <input type="submit" value="Book Now" />
+      </a>
+
+      
     </form>
   </div>
 

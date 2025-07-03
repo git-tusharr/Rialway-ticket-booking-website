@@ -1,13 +1,33 @@
 {
   "railway": [
     {
-      "id": "d96a",
-      "Name": "tushar",
-      "From": "Jaipur",
-      "To": "Hyderabad",
-      "Departure": "2025-07-26",
+      "Name": "Amit",
+      "From": "Delhi",
+      "To": "Mumbai",
+      "Departure": "2025-07-31",
       "Person": 5,
-      "Class": "AC First Class",
+      "Class": "Chair Car",
+      "Total": 2500,
+      "id": "d96a"
+    },
+    {
+      "id": "a4b6",
+      "Name": "prashant",
+      "From": "Lucknow",
+      "To": "Pune",
+      "Departure": "2025-07-23",
+      "Person": 4,
+      "Class": "AC 3-Tier",
+      "Total": 2000
+    },
+    {
+      "id": "4317",
+      "Name": "Tushar Chourasiya ",
+      "From": "Lucknow",
+      "To": "Delhi",
+      "Departure": "2025-07-24",
+      "Person": 5,
+      "Class": "Sleeper",
       "Total": 2500
     }
   ]
