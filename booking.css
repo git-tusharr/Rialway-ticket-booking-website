@@ -51,3 +51,38 @@
     background-color: #0056b3;
   }
 
+
+
+
+
+
+
+
+  #formContainer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  width: 400px;
+  margin: 20px auto;
+}
+
+
+#formContainer select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#formContainer input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+

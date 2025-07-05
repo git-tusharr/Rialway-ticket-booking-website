@@ -11,24 +11,44 @@
       "id": "d96a"
     },
     {
-      "id": "a4b6",
-      "Name": "prashant",
-      "From": "Lucknow",
-      "To": "Pune",
+      "Name": "prashant kumar",
+      "From": "Delhi",
+      "To": "Jaipur",
       "Departure": "2025-07-23",
-      "Person": 4,
-      "Class": "AC 3-Tier",
-      "Total": 2000
+      "Person": 6,
+      "Class": "AC First Class",
+      "Total": 3000,
+      "id": "a4b6"
     },
     {
-      "id": "4317",
-      "Name": "Tushar Chourasiya ",
+      "id": "917c",
+      "Name": "tushar",
       "From": "Lucknow",
       "To": "Delhi",
-      "Departure": "2025-07-24",
+      "Departure": "2025-07-11",
       "Person": 5,
       "Class": "Sleeper",
       "Total": 2500
+    },
+    {
+      "id": "dd0c",
+      "Name": "mahima",
+      "From": "Jaipur",
+      "To": "Mumbai",
+      "Departure": "2025-07-10",
+      "Person": 4,
+      "Class": "Sleeper",
+      "Total": 2000
+    },
+    {
+      "id": "ae8d",
+      "Name": "tasnishk",
+      "From": "Delhi",
+      "To": "Mumbai",
+      "Departure": "2025-07-12",
+      "Person": 2,
+      "Class": "Sleeper",
+      "Total": 1000
     }
   ]
 }

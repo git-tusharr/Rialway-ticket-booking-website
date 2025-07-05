@@ -57,6 +57,9 @@ let Ins=()=>{
             Total: 500 * Number(person)
         })
     })
+
+     location.href = "crud.html";
+    return false;
     
 }
 
@@ -123,7 +126,7 @@ let formopen=async (id)=>{
       document.querySelector("#formContainer").innerHTML = FormData;
 }
 
-let updateData=(id)=>{
+let updateData=async(id)=>{
 
     let name=document.querySelector("#upname").value;
     let from=document.querySelector("#upfrom").value;
@@ -134,7 +137,7 @@ let updateData=(id)=>{
 
     let url=`http://localhost:3000/railway/${id}`
 
-    fetch(url,{
+    await fetch(url,{
         method:"PUT",
         headers:{
             "Content-type":"application/json"
