@@ -2,9 +2,35 @@ let FetchData=async()=>{
     let url='http://localhost:3000/railway'
     let res=await fetch(url);
     let data=await res.json();
-    console.log(data);
+
+    datashow(data)
+}
+
+let searchh=async()=>{
+    let searchinp=document.querySelector("#Searchh").value.toLowerCase()
+
+    let url=`http://localhost:3000/railway`
+
+    let res=await fetch(url,{method:"GET"})
+
+    let data=await res.json()
+
+      let FilterData=data.filter((e)=>{
+
+        return e.Name.toLowerCase().includes(searchinp)
+ 
+      })
+
+      datashow(FilterData)
+}
+
+
+
+let datashow=(data)=>{
 
     let Show=document.querySelector("#dataShow")
+     Show.innerHTML=""
+
     data.map((e)=>{
         Show.innerHTML+=`
         <tr>
@@ -76,7 +102,7 @@ let formopen=async (id)=>{
       <input type="text" id="upname" value="${data.Name}"><br><br>
 
       From<br>
-      <select id="upfrom" value="${data.from}">
+      <select id="upfrom" value="${data.From}">
         <option value="">-- Select City --</option>
         <option value="Delhi">Delhi</option>
         <option value="Mumbai">Mumbai</option>

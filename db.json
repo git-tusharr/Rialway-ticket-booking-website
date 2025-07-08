@@ -49,6 +49,16 @@
       "Person": 2,
       "Class": "Sleeper",
       "Total": 1000
+    },
+    {
+      "id": "d2ee",
+      "Name": "vineet",
+      "From": "Lucknow",
+      "To": "Pune",
+      "Departure": "2025-07-09",
+      "Person": 2,
+      "Class": "AC First Class",
+      "Total": 1000
     }
   ]
 }
