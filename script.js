@@ -111,7 +111,7 @@ let Login=()=>{
 
     if (loginEmail==localemail && loginpass==localpass ) {
         
-        location.href="home.html";
+        location.href="index.html";
         return false;
 
     }

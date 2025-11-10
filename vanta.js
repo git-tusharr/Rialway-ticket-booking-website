@@ -10,3 +10,4 @@ VANTA.FOG({
   lowlightColor: 0x806fd1,
   baseColor: 0xf9f1f1
 })
+

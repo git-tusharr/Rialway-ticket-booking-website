@@ -1,12 +1,12 @@
 {
   "railway": [
     {
-      "Name": "Amit",
-      "From": "Delhi",
-      "To": "Mumbai",
+      "Name": "Vidit",
+      "From": "",
+      "To": "",
       "Departure": "2025-07-31",
       "Person": 5,
-      "Class": "Chair Car",
+      "Class": "",
       "Total": 2500,
       "id": "d96a"
     },
@@ -59,6 +59,16 @@
       "Person": 2,
       "Class": "AC First Class",
       "Total": 1000
+    },
+    {
+      "id": "eb80",
+      "Name": "Tushar769",
+      "From": "Lucknow",
+      "To": "Jaipur",
+      "Departure": "2025-07-12",
+      "Person": 5,
+      "Class": "AC 2-Tier",
+      "Total": 2500
     }
   ]
 }
