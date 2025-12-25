@@ -1,4 +1,4 @@
-/* RESET */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +14,9 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 18px 20px;
   z-index: 1000;
 }
 
@@ -26,14 +26,17 @@ a {
   align-items: center;
 }
 
+/* LOGO */
 .navbarLogo {
   display: flex;
   align-items: center;
   font-size: 24px;
   font-weight: bold;
   color: #2f5ca0;
+  gap: 8px;
 }
 
+/* LINKS */
 .navLinks {
   display: flex;
   align-items: center;
@@ -43,6 +46,73 @@ a {
 .navLinks a {
   font-weight: bold;
   color: black;
+  position: relative;
+}
+
+/* underline hover */
+.navLinks a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #007bff;
+  transition: 0.3s;
+}
+
+.navLinks a:hover::after {
+  width: 100%;
+}
+
+/* ================= HAMBURGER ================= */
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menuToggle span {
+  width: 26px;
+  height: 3px;
+  background-color: #007bff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* ================= BUTTONS ================= */
+.btnPrimary,
+.btnSecondary,
+.btnLogin {
+  padding: 12px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btnPrimary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btnPrimary:hover {
+  background-color: #0056b3;
+}
+
+.btnSecondary,
+.btnLogin {
+  background-color: white;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.btnSecondary:hover,
+.btnLogin:hover {
+  background-color: #e0f0ff;
 }
 
 /* ================= HERO ================= */
@@ -80,40 +150,6 @@ a {
   flex-wrap: wrap;
 }
 
-/* BUTTONS */
-.btnPrimary,
-.btnSecondary,
-.btnLogin {
-  padding: 12px 18px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.btnPrimary {
-  background-color: #007bff;
-  color: white;
-}
-
-.btnPrimary:hover {
-  background-color: #0056b3;
-}
-
-.btnSecondary,
-.btnLogin {
-  background-color: white;
-  border: 2px solid #007bff;
-  color: #007bff;
-}
-
-.btnSecondary:hover,
-.btnLogin:hover {
-  background-color: #e0f0ff;
-}
-
 /* HERO ICON */
 .heroImg {
   flex: 1 1 300px;
@@ -142,11 +178,6 @@ a {
   color: #007bff;
 }
 
-.whyChoose {
-  display: flex;
-  flex-direction: column;
-}
-
 .whyChooseBox {
   display: flex;
   gap: 30px;
@@ -161,6 +192,11 @@ a {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 60px;
+  transition: transform 0.3s;
+}
+
+.featureBox:hover {
+  transform: translateY(-8px);
 }
 
 .featureBox i {
@@ -169,11 +205,7 @@ a {
   margin-bottom: 10px;
 }
 
-.featureBox h2 {
-  color: #007bff;
-  margin-bottom: 10px;
-}
-
+.featureBox h2,
 .featureBox p {
   color: #007bff;
 }
@@ -253,15 +285,24 @@ footer {
 /* TABLET & MOBILE */
 @media (max-width: 768px) {
 
-  .navbarContainer {
-    flex-direction: column;
-    gap: 15px;
+  .menuToggle {
+    display: flex;
   }
 
   .navLinks {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 0;
+    display: none;
+  }
+
+  .navLinks.active {
+    display: flex;
   }
 
   .hero {
@@ -271,10 +312,6 @@ footer {
 
   .heroTitle {
     font-size: 2.2rem;
-  }
-
-  .heroSubtitle {
-    font-size: 1rem;
   }
 
   .heroButtons {
@@ -290,26 +327,14 @@ footer {
     padding: 0 20px;
   }
 
-  .featureBox {
-    padding: 30px;
-  }
-
   .swiper {
     width: 90%;
-  }
-
-  .coustomerSaysBox {
-    padding: 40px 20px;
   }
 
   .footer {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-  }
-
-  .footerContainer {
-    margin: 30px 0;
   }
 }
 
